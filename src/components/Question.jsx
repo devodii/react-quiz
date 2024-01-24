@@ -1,3 +1,4 @@
+import * as React from "react";
 import { Options } from "./options";
 
 export function Question({ question, dispatch, answer }) {

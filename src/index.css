@@ -263,3 +263,8 @@ p.question-count-display {
   font-size: 20px;
   margin-bottom: 20px;
 }
+
+span.percentage {
+  display: block;
+  margin-top: 10px;
+}
