@@ -43,7 +43,6 @@ function reducer(state, action) {
 
     case "newAnswer":
       const question = state.questions.at(state.index);
-      console.log({ question });
       return {
         ...state,
         answer: action.payload,
@@ -104,7 +103,6 @@ export default function App() {
       .then((data) => dispatch({ type: "dataReceived", payload: data }))
       .catch((error) => {
         dispatch({ type: "dataFailed" });
-        console.error({ error });
       });
   }, []);
 

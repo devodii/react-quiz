@@ -1,6 +1,5 @@
 export function Options({ question, dispatch, answer }) {
   const hasAnswered = answer !== null;
-  console.log({ question });
   return (
     <div className="options">
       {question.options.map((option, idx) => (

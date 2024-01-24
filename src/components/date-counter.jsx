@@ -3,8 +3,6 @@ import * as React from "react";
 const initialState = { count: 0, step: 1 };
 
 function reducer(state, action) {
-  console.log({ state, action });
-
   switch (action.type) {
     case "dec":
       return { ...state, count: state.count - state.step };
