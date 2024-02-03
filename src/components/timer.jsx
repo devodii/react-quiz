@@ -1,10 +1,12 @@
 import * as React from "react";
+import { useQuiz } from "../context/quiz-context";
 
 function addZeroPrefix(number) {
   return number < 10 ? `0${number}` : number;
 }
 
-export function Timer({ dispatch, secondsRemaining }) {
+export function Timer() {
+  const { dispatch, secondsRemaining } = useQuiz();
   const minutes = Math.floor(secondsRemaining / 60);
   const seconds = secondsRemaining - minutes * 60;
   React.useEffect(() => {
